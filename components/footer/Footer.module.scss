@@ -1,11 +1,17 @@
 @import "./../../global-styles/variables.scss";
 @import "./../../global-styles/mixins.scss";
 .section {
-    background-color: rgba(212, 233, 23, 0.863);
+    background: linear-gradient(
+        to right,
+        rgba(216, 212, 0, 0.897),
+        rgb(216, 212, 0)
+    );
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 3rem;
+
+    position: relative;
 }
 
 .logo-wrapper {
@@ -22,6 +28,7 @@
     font-size: 2rem;
     transition: all 0.1s;
     color: black;
+    z-index: 1;
 
     &:hover {
         transform: scale(1.1);
@@ -32,6 +39,7 @@
     display: flex;
     gap: 1rem;
     padding-top: 2rem;
+    z-index: 1;
 
     & > * {
         font-size: 3rem;
@@ -47,6 +55,7 @@
 .text {
     max-width: 70rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .bottom {
@@ -54,4 +63,8 @@
     padding: 1rem 0;
     color: $text-color-tertiary;
     text-align: center;
+}
+
+.bg {
+    z-index: -1;
 }

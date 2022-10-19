@@ -8,10 +8,17 @@ function Footer() {
     return (
         <React.Fragment>
             <footer className={`${styles.section} section`}>
+                <Image
+                    alt="Logo"
+                    src={"/images/teslaceramic1.jpg"}
+                    layout="fill"
+                    objectFit="cover"
+                    className={styles.bg}
+                />
                 <div className={styles["logo-wrapper"]}>
                     <Image
                         alt="Logo"
-                        src={"/images/rfx-logo.png"}
+                        src={"/images/logo2.png"}
                         width="200"
                         height="100"
                         objectFit="contain"

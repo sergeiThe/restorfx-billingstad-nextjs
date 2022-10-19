@@ -5,6 +5,13 @@ import styles from "./OmRestorFX.module.scss";
 function OmRestorFX() {
     return (
         <section className={`${styles.section} section`}>
+            <Image
+                alt="Logo"
+                src={"/images/bil.jpg"}
+                layout="fill"
+                objectFit="cover"
+                className={styles.bg}
+            />
             <div className={styles["content-wrapper"]}>
                 <div className={styles["text-wrapper"]}>
                     <h2 className={styles.title}>Om RestorFX</h2>
@@ -28,7 +35,7 @@ function OmRestorFX() {
                         title="What is RestorFX?"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                 </div>
             </div>

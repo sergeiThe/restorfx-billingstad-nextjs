@@ -18,12 +18,14 @@
 
 .text-wrapper {
     flex-basis: 50%;
+    z-index: 1;
 }
 
 .video-wrapper {
     padding-top: 30px;
     height: 300px;
     flex-basis: 700px;
+    z-index: 1;
 }
 
 .video {
