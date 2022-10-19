@@ -28,4 +28,10 @@
             @content;
         }
     }
+
+    @if $bp == 770 {
+        @media (max-width: 770px) {
+            @content;
+        }
+    }
 }

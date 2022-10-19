@@ -1,0 +1,61 @@
+@import "./../../global-styles/variables.scss";
+@import "./../../global-styles/mixins.scss";
+
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+
+    background: linear-gradient(to right, black, rgba(102, 100, 0, 0.61));
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.text-wrapper {
+    flex-basis: 50%;
+}
+
+.video-wrapper {
+    padding-top: 30px;
+    height: 300px;
+    flex-basis: 700px;
+}
+
+.video {
+}
+.title {
+    color: $text-color;
+    font-weight: 100;
+}
+
+.text {
+    color: $text-color-tertiary;
+}
+
+@include respond(1000) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .text-wrapper {
+        flex-basis: 100%;
+    }
+
+    .video-wrapper {
+        padding-top: 30px;
+        height: 300px;
+        flex-basis: 300px;
+    }
+}
+
+.bg {
+    z-index: -1;
+}

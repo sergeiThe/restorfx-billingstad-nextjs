@@ -1,0 +1,57 @@
+@import "./../../global-styles/variables.scss";
+@import "./../../global-styles/mixins.scss";
+.section {
+    background-color: rgba(212, 233, 23, 0.863);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.logo-wrapper {
+    width: 200px;
+    animation: fadeIn 1.5s ease-out 0s backwards;
+}
+
+.icon {
+    transform: translate(-5px, 4px);
+}
+
+.contact-wrapper {
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.1s;
+    color: black;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+
+    & > * {
+        font-size: 3rem;
+        color: black;
+        transition: all 0.1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.text {
+    max-width: 70rem;
+    text-align: center;
+}
+
+.bottom {
+    background-color: $text-color-secondary;
+    padding: 1rem 0;
+    color: $text-color-tertiary;
+    text-align: center;
+}

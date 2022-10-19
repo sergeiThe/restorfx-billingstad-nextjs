@@ -1,6 +1,8 @@
 import React from "react";
 import OmOss from "../components/about/OmOss";
+import OmRestorFX from "../components/about/OmRestorFX";
 import BenefitSection from "../components/benefits/BenefitSection";
+import Footer from "../components/footer/Footer";
 import HeaderSection from "../components/header/HeaderSection";
 import Tjenester from "../components/services/Tjenester";
 
@@ -14,6 +16,8 @@ export default function Home() {
         <BenefitSection />
         <OmOss />
         <Tjenester />
+        <OmRestorFX />
+        <Footer />
       </main>
     </React.Fragment>
   )
