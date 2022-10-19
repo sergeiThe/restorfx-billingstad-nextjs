@@ -1,0 +1,31 @@
+@mixin respond($bp) {
+    @if $bp == mobile {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+
+    @if $bp == tablet-portrait {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @if $bp == desktop {
+        @media (min-width: 1300px) {
+            @content;
+        }
+    }
+
+    @if $bp == big-desktop {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+
+    @if $bp == 1000 {
+        @media (max-width: 1000px) {
+            @content;
+        }
+    }
+}

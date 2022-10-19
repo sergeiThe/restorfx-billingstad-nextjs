@@ -1,0 +1,57 @@
+@import "./../../global-styles/variables.scss";
+@import "./../../global-styles/mixins.scss";
+@import "./../../global-styles/animations.scss";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem 0;
+}
+
+.logo-wrapper {
+    width: 200px;
+    animation: fadeIn 1.5s ease-out 0s backwards;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 60rem;
+
+    border-radius: 30px;
+    border-bottom: 1px solid $text-color;
+    padding-bottom: 6px;
+    margin-top: 2rem;
+
+    animation: fadeIn 1.5s ease-out 0.5s backwards;
+
+    li {
+        font-size: 2rem;
+        font-weight: 100;
+
+        animation: fadeIn 1.5s ease-out 3.5s backwards;
+
+        a {
+            color: $text-color;
+            transition: all 0.3s;
+
+            &:hover {
+                color: white;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.text {
+    color: wheat;
+}
+
+.nav {
+    @include respond(tablet-portrait) {
+        display: none;
+    }
+}

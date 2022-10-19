@@ -1,0 +1,61 @@
+@import "./../../global-styles/variables.scss";
+@import "./../../global-styles//mixins.scss";
+.section {
+    border-top: 3px solid $text-color;
+    border-bottom: 3px solid $text-color;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+@include respond(1000) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.list-item {
+    text-align: center;
+    padding: 25px;
+}
+
+.icon {
+    color: $text-color;
+    font-size: 5rem;
+}
+
+.les-mer {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-out;
+    padding: 1rem 2rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $text-color;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.3s ease-out;
+    }
+
+    &:hover::after {
+        height: 100%;
+        border-radius: 30px;
+    }
+    &:hover {
+        color: white;
+    }
+}
