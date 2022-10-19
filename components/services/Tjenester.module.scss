@@ -1,5 +1,5 @@
 @import "./../../global-styles/variables.scss";
-@import "./../../global-styles//mixins.scss";
+@import "./../../global-styles/mixins.scss";
 .section {
     border-top: 3px solid $text-color;
     border-bottom: 3px solid $text-color;
@@ -97,5 +97,48 @@
         color: $text-color;
         transition: all 0.3s;
         z-index: 50;
+    }
+}
+
+@include respond(1000) {
+    .list {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .list-item {
+        &:nth-of-type(1) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        &:nth-of-type(2) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        &:nth-of-type(3) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        &:nth-of-type(4) {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        &:nth-of-type(5) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
     }
 }
