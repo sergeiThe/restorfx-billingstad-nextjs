@@ -6,8 +6,9 @@ export default function Document() {
             <Head />
             <body>
                 <Main />
-                <NextScript />
                 <div id='menu'></div>
+                <div id="modal"></div>
+                <NextScript />
             </body>
         </Html>
     )

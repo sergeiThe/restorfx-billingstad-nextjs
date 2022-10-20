@@ -1,12 +1,13 @@
 import React from "react";
-import { MdSettingsBackupRestore } from "react-icons/md";
-import { BsShieldCheck } from "react-icons/bs";
-import { BsArrowUpCircleFill } from "react-icons/bs";
 import { FaShieldAlt, FaCheckDouble } from "react-icons/fa";
 import { AiTwotoneCar } from "react-icons/ai";
 import styles from "./BenefitSection.module.scss";
+import { useModalContext } from "../../store/Context";
+import { MODAL_TYPES } from "../../store/Context";
 
 function BenefitSection() {
+    const modalCtx = useModalContext();
+
     return (
         <section className={`${styles.section} section`}>
             <ul className={styles.list}>
@@ -21,7 +22,14 @@ function BenefitSection() {
                             automobile by not cutting away vital clear coat and
                             eliminates the need to repaint a car.
                         </p>
-                        <button className={styles["les-mer"]}>Les mer</button>
+                        <button
+                            className={styles["les-mer"]}
+                            onClick={() => {
+                                modalCtx.setModalType(MODAL_TYPES.RESTOR_FX);
+                            }}
+                        >
+                            Les mer
+                        </button>
                     </article>
                 </li>
                 <li className={styles["list-item"]}>
@@ -36,7 +44,14 @@ function BenefitSection() {
                             crystalline film that impregnates and protects the
                             substrate underneath.
                         </p>
-                        <button className={styles["les-mer"]}>Les mer</button>
+                        <button
+                            className={styles["les-mer"]}
+                            onClick={() => {
+                                modalCtx.setModalType(MODAL_TYPES.CLEAR_FX);
+                            }}
+                        >
+                            Les mer
+                        </button>
                     </article>
                 </li>
                 <li className={styles["list-item"]}>
@@ -50,7 +65,6 @@ function BenefitSection() {
                             automobile by not cutting away vital clear coat and
                             eliminates the need to repaint a car.
                         </p>
-                        <button className={styles["les-mer"]}>Les mer</button>
                     </article>
                 </li>
             </ul>
