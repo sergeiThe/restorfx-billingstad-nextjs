@@ -52,7 +52,7 @@ function Tjenester() {
                         objectFit="cover"
                         className={styles.bg}
                     />
-                    <h3>Frontlyktrestaurering</h3>
+                    <h3>FX Frontlyktrestaurering</h3>
                     <button>Les mer</button>
                 </li>
                 <li

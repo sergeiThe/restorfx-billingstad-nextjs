@@ -1,6 +1,8 @@
 import React from "react";
 import { FaShieldAlt, FaCheckDouble } from "react-icons/fa";
 import { AiTwotoneCar } from "react-icons/ai";
+import { IoSparklesSharp } from "react-icons/io5";
+import { MdInvertColors } from "react-icons/md";
 import styles from "./BenefitSection.module.scss";
 import { useModalContext } from "../../store/Context";
 import { MODAL_TYPES } from "../../store/Context";
@@ -13,45 +15,22 @@ function BenefitSection() {
             <ul className={styles.list}>
                 <li className={styles["list-item"]}>
                     <article>
-                        <FaCheckDouble className={styles.icon} />
-                        <h3>RestorFX Restaurering</h3>
+                        <MdInvertColors className={styles.icon} />
+                        <h3>Gjenopprett den rike fargen</h3>
                         <p>
-                            RestorFX completely addresses surface damage to
-                            permanently restore a vehicles exterior without
-                            repainting. It maintains the integrity of an
-                            automobile by not cutting away vital clear coat and
-                            eliminates the need to repaint a car.
+                            Få bilen din til å få tilbake sin opprinnelige rike
+                            fargen uten polering og lakkfjerning
                         </p>
-                        <button
-                            className={styles["les-mer"]}
-                            onClick={() => {
-                                modalCtx.setModalType(MODAL_TYPES.RESTOR_FX);
-                            }}
-                        >
-                            Les mer
-                        </button>
                     </article>
                 </li>
                 <li className={styles["list-item"]}>
                     <article>
-                        <FaShieldAlt className={styles.icon} />
-                        <h3>ClearFX Beskyttelse</h3>
+                        <IoSparklesSharp className={styles.icon} />
+                        <h3>Gjenoppliv jevnheten og glansen</h3>
                         <p>
-                            ClearFX is a range of professional solutions
-                            chemically engineered for automotive surface
-                            protection and modification. ClearFX attogenetic
-                            solutions are formulated to generate a clear,
-                            crystalline film that impregnates and protects the
-                            substrate underneath.
+                            Har du lyst til å få bilen til å stråle igjen som
+                            den gjorde da den var ny?
                         </p>
-                        <button
-                            className={styles["les-mer"]}
-                            onClick={() => {
-                                modalCtx.setModalType(MODAL_TYPES.CLEAR_FX);
-                            }}
-                        >
-                            Les mer
-                        </button>
                     </article>
                 </li>
                 <li className={styles["list-item"]}>
@@ -59,11 +38,9 @@ function BenefitSection() {
                         <AiTwotoneCar className={styles.icon} />
                         <h3>Øk bilens verdi</h3>
                         <p>
-                            RestorFX completely addresses surface damage to
-                            permanently restore a vehicles exterior without
-                            repainting. It maintains the integrity of an
-                            automobile by not cutting away vital clear coat and
-                            eliminates the need to repaint a car.
+                            Øk eller bevar bilens verdi lengst mulig ved å
+                            gjenopprette og beskytte bilen både innvendig og
+                            utvendig.
                         </p>
                     </article>
                 </li>
