@@ -10,6 +10,10 @@ const services = [{
     shortDesc: "Gjenopprett den rike fargen på bilen uten polering og lakkfjerning, Beskytt karosseriet mot korrosjon, UV-stråler og surt nedbør, Gjenoppliv jevnheten og glansen på overflaten uten riper",
     longDesc: "ClearFX beskytter bilen din mot riper, slitasje. En utmerket løsning for eiere av nye og brukte biler for å ta vare på utsiden av karosseriet og interiøret. Løsningen forsegler og styrker overflatestrukturen, gir en uimotståelig glans til bilen, forbedrer motstanden og holdbarheten til lakken. Dessuten, etterlater den visuell klarhet og fargekontrast med høy intensitet samt gir langvarige og langvarige resultater på alle overflater av kjøretøyet. ClearFX styrker og gjør alle overflater ekstremt hydrofobe og ripebestandige, og tetter og styrker malingstrukturen.",
     egnetFor: "ClearFX er egnet for alle biler. Denne teknologien anbefales for veldig gamle biler, fordi belegget kommer i kontakt med overflater."
+}, {
+    id: 3,
+    title: "Frontlyktrestaurering",
+    longDesc: "Fabrikkens klarlakk på frontlykter kan oksidere og falme over tid, noe som reduserer førerens synlighet. FX Frontlykt er et gjenopprettende beskyttelsesbelegg som bringer klarheten og glansen til frontlyktene tilbake til sin opprinnelige tilstand, altså den gir mer lysstyrke, forbedrer synet og forhindrer at frontlyktene falmer i årevis.",
 }
 ]
 

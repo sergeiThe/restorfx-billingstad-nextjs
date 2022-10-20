@@ -5,15 +5,15 @@
     display: flex;
     position: relative;
 
-    padding: 10rem;
+    padding: 5rem;
     border: 10px solid $text-color;
     border-radius: 80px;
 
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 70%;
-    height: 60vh;
+    width: 95%;
+    height: 95vh;
     background-color: rgb(250, 245, 203);
     z-index: 100;
 
@@ -28,7 +28,7 @@
 
 .text {
     color: $text-color-secondary;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .text-wrapper {

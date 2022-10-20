@@ -17,6 +17,11 @@ function ModalWindow() {
                     title={services.at(1).title}
                     text={services.at(1).longDesc}
                 />
+            ) : modalCtx.modalType === MODAL_TYPES.FRONTLYS_RESTAURERING ? (
+                <Modal
+                    title={services.at(2).title}
+                    text={services.at(2).longDesc}
+                />
             ) : null}
         </React.Fragment>
     );

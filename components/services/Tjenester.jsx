@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Tjenester.module.scss";
 import Image from "next/image";
+import { useModalContext, MODAL_TYPES } from "../../store/Context";
 
 function Tjenester() {
+    const modalCtx = useModalContext();
+
     return (
         <section className={`${styles.section} section`}>
             <div className={styles["text-wrapper"]}>
@@ -18,7 +21,12 @@ function Tjenester() {
                 </p>
             </div>
             <ul className={styles.list}>
-                <li className={styles["list-item"]}>
+                <li
+                    className={styles["list-item"]}
+                    onClick={() => {
+                        modalCtx.setModalType(MODAL_TYPES.RESTOR_FX);
+                    }}
+                >
                     <Image
                         alt="bil"
                         src={"/images/ford.jpg"}
@@ -26,10 +34,17 @@ function Tjenester() {
                         objectFit="cover"
                         className={styles.bg}
                     />
-                    <h3>Lakkrestaurering</h3>
+                    <h3>RestorFX Lakkrestaurering</h3>
                     <button>Les mer</button>
                 </li>
-                <li className={styles["list-item"]}>
+                <li
+                    className={styles["list-item"]}
+                    onClick={() => {
+                        modalCtx.setModalType(
+                            MODAL_TYPES.FRONTLYS_RESTAURERING
+                        );
+                    }}
+                >
                     <Image
                         alt="bil"
                         src={"/images/jaguar.jpg"}
@@ -37,11 +52,16 @@ function Tjenester() {
                         objectFit="cover"
                         className={styles.bg}
                     />
-                    <h3>Frontlysrestaurering</h3>
+                    <h3>Frontlyktrestaurering</h3>
                     <button>Les mer</button>
                 </li>
-                <li className={styles["list-item"]}>
-                    <h3>Lakkbeskyttelse</h3>
+                <li
+                    className={styles["list-item"]}
+                    onClick={() => {
+                        modalCtx.setModalType(MODAL_TYPES.CLEAR_FX);
+                    }}
+                >
+                    <h3>ClearFX Lakkbeskyttelse</h3>
                     <button>Les mer</button>
                     <Image
                         alt="bil"
@@ -60,7 +80,6 @@ function Tjenester() {
                         className={styles.bg}
                     />
                     <h3>Kosmetisk klargjøring</h3>
-                    <button>Les mer</button>
                 </li>
                 <li className={styles["list-item"]}>
                     <Image
@@ -71,7 +90,6 @@ function Tjenester() {
                         className={styles.bg}
                     />
                     <h3>Andre bilpleie tjenester</h3>
-                    <button>Les mer</button>
                 </li>
             </ul>
         </section>

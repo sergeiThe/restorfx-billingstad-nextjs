@@ -26,9 +26,6 @@ function Header() {
                     <li className={styles.text}>
                         <Link href="#kontakt">Kontakt</Link>
                     </li>
-                    <li className={styles.text}>
-                        <Link href="#anmeldelser">Anmeldelser</Link>
-                    </li>
                 </ul>
             </nav>
         </header>
