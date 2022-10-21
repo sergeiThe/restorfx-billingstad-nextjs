@@ -32,7 +32,7 @@ function Footer() {
                     className={styles["contact-wrapper"]}
                 >
                     <MdMyLocation className={styles.icon} />
-                    <span>Olav Brunborgsvei 4, 1396 Billingstad, Norge</span>
+                    <span>Olav Brunborgsvei 4, 1396 Billingstad</span>
                 </a>
                 <a
                     href="mailto:rfx.asker.barum@gmail.com"
