@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 function Header() {
     return (
@@ -18,13 +18,37 @@ function Header() {
             <nav className={styles.nav}>
                 <ul className={styles["nav-list"]}>
                     <li className={styles.text}>
-                        <Link href="#tjenester">Tjenester</Link>
+                        <Link
+                            to="tjenester"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={500}
+                        >
+                            Tjenester
+                        </Link>
                     </li>
                     <li className={styles.text}>
-                        <Link href="#omoss">Om oss</Link>
+                        <Link
+                            to="omoss"
+                            spy={true}
+                            offset={50}
+                            smooth={true}
+                            duration={500}
+                        >
+                            Om oss
+                        </Link>
                     </li>
                     <li className={styles.text}>
-                        <Link href="#kontakt">Kontakt</Link>
+                        <Link
+                            to="kontakt"
+                            smooth={true}
+                            spy={true}
+                            offset={50}
+                            duration={500}
+                        >
+                            Kontakt
+                        </Link>
                     </li>
                 </ul>
             </nav>

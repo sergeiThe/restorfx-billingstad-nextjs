@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import Image from "next/image";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail, MdPhone, MdMyLocation } from "react-icons/md";
+import { BsMessenger } from "react-icons/bs";
 
 function Footer() {
     return (
         <React.Fragment>
-            <footer className={`${styles.section} section`}>
+            <footer className={`${styles.section} section`} id="kontakt">
                 <Image
                     alt="Logo"
                     src={"/images/teslaceramic1.jpg"}
@@ -24,6 +25,15 @@ function Footer() {
                         objectFit="contain"
                     />
                 </div>
+                <a
+                    href="https://goo.gl/maps/8tZKCMNPRck6JYdY6"
+                    rel="noreferrer"
+                    target="_blank"
+                    className={styles["contact-wrapper"]}
+                >
+                    <MdMyLocation className={styles.icon} />
+                    <span>Olav Brunborgsvei 4, 1396 Billingstad, Norge</span>
+                </a>
                 <a
                     href="mailto:rfx.asker.barum@gmail.com"
                     className={styles["contact-wrapper"]}
@@ -50,14 +60,14 @@ function Footer() {
                     >
                         <FaInstagram />
                     </a>
+                    <a
+                        href="https://m.me/rfx.billingstad"
+                        rel="noreferrer"
+                        target="_blank"
+                    >
+                        <BsMessenger />
+                    </a>
                 </div>
-                <p className={styles.text}>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lo
-                </p>
             </footer>
             <div className={styles.bottom}>
                 2022 @ Rettigheter reservert - RestorFX Billingstad

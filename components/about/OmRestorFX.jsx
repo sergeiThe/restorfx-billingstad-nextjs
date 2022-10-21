@@ -16,14 +16,17 @@ function OmRestorFX() {
                 <div className={styles["text-wrapper"]}>
                     <h2 className={styles.title}>Om RestorFX</h2>
                     <p className={styles.text}>
-                        RestorFX is in the business of delivering the most
-                        efficient, permanent, and innovative technology and
-                        products on the market—with the goal of bringing the
-                        automotive detailing and refinishing industry to the
-                        leading edge. We do this by focusing on intelligent,
-                        smart tools that improve the industry, drive innovation,
-                        and provide incredible value and satisfaction to
-                        customers.
+                        Etter 6 år med forskning og utvikling ble RestorFX
+                        International lansert i 2006. Selskapet er basert i
+                        Pacific Northwest, med hundrevis av partnere over hele
+                        verden. Over 100 000 kjøretøy har blitt oppdatert med
+                        RestorFX, og oppdaterer hundrevis av kjøretøy hver dag.
+                        <br></br>
+                        <br></br>
+                        Som et globalt synergistisk merke, er RestorFX dedikert
+                        til å skape produkter og systemer som kontinuerlig
+                        setter en ny standard for fortreffelighet og gradvis
+                        øker toppen av bilrekondisjoneringsteknologier.
                     </p>
                 </div>
                 <div className={styles["video-wrapper"]}>

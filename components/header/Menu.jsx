@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styles from "./Menu.module.scss";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useNavContext } from "../../store/Context";
 import { motion } from "framer-motion";
 
@@ -17,17 +17,41 @@ function Menu() {
         >
             <nav>
                 <ul>
-                    <li onClick={menuCtx.toggleNav}>
-                        <Link href={"#tjenester"}>Tjenester</Link>
+                    <li>
+                        <Link
+                            onClick={menuCtx.toggleNav}
+                            to="tjenester"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={500}
+                        >
+                            Tjenester
+                        </Link>
                     </li>
-                    <li onClick={menuCtx.toggleNav}>
-                        <Link href={"#omoss"}>Om oss</Link>
+                    <li>
+                        <Link
+                            onClick={menuCtx.toggleNav}
+                            to="omoss"
+                            spy={true}
+                            offset={50}
+                            smooth={true}
+                            duration={500}
+                        >
+                            Om oss
+                        </Link>
                     </li>
-                    <li onClick={menuCtx.toggleNav}>
-                        <Link href={"#kontakt"}>Kontakt</Link>
-                    </li>
-                    <li onClick={menuCtx.toggleNav}>
-                        <Link href={"#anmeldelser"}>Anmeldelser</Link>
+                    <li>
+                        <Link
+                            onClick={menuCtx.toggleNav}
+                            to="kontakt"
+                            smooth={true}
+                            spy={true}
+                            offset={50}
+                            duration={500}
+                        >
+                            Kontakt
+                        </Link>
                     </li>
                 </ul>
             </nav>

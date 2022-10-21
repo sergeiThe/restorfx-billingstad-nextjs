@@ -1,0 +1,27 @@
+@import "./../../global-styles/variables.scss";
+@import "./../../global-styles/mixins.scss";
+@import "./../../global-styles/animations.scss";
+
+.icon {
+    position: fixed;
+    bottom: 25px;
+    right: 45px;
+    color: $text-color;
+
+    z-index: 50;
+    font-size: 5rem;
+
+    transition: all 0.3s;
+    cursor: pointer;
+    animation: expand 0.2s ease-in 2.5s backwards;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+@include respond(mobile) {
+    .icon {
+        right: 20px;
+    }
+}

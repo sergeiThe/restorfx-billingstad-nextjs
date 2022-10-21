@@ -11,7 +11,7 @@ function BenefitSection() {
     const modalCtx = useModalContext();
 
     return (
-        <section className={`${styles.section} section`}>
+        <section className={`${styles.section} section`} id="benefits">
             <ul className={styles.list}>
                 <li className={styles["list-item"]}>
                     <article>

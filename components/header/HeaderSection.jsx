@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useNavContext } from "../../store/Context";
 import MobileMenu from "./Menu";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
 
 function HeaderSection() {
     const navCtx = useNavContext();
@@ -32,11 +33,20 @@ function HeaderSection() {
                     </h1>
 
                     <p className={styles.text}>
-                        Delivering the most efficient, permanent, and innovative
-                        technology and products on the market
+                        RestorFX var banebrytende med lanseringen av den mest
+                        avanserte teknologien for lakkgjenoppretting og
+                        lakkreparasjon på markedet.
                     </p>
                     <div className={styles["arrow-wrapper"]}>
-                        <SlArrowDown className={styles.arrow} />
+                        <Link
+                            to="benefits"
+                            spy={true}
+                            smooth={true}
+                            offset={-50}
+                            duration={500}
+                        >
+                            <SlArrowDown className={styles.arrow} />
+                        </Link>
                     </div>
                 </div>
 

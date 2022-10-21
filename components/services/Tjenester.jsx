@@ -7,17 +7,16 @@ function Tjenester() {
     const modalCtx = useModalContext();
 
     return (
-        <section className={`${styles.section} section`}>
+        <section className={`${styles.section} section`} id="tjenester">
             <div className={styles["text-wrapper"]}>
                 <h2 className={styles.title}>Våre tjenester</h2>
                 <p>
-                    RestorFX is in the business of delivering the most
-                    efficient, permanent, and innovative technology and products
-                    on the market—with the goal of bringing the automotive
-                    detailing and refinishing industry to the leading edge. We
-                    do this by focusing on intelligent, smart tools that improve
-                    the industry, drive innovation, and provide incredible value
-                    and satisfaction to customers.
+                    Av de tusenvis av produktene som finnes i markedet, kan
+                    ingenting sammenlignes med RestorFX. Det revolusjonerer
+                    måten bilindustrien og bransjen for kosmetisk klargjøring
+                    etterlakkerer. Med kontinuerlig testing og evaluering
+                    forblir RestorFX det mest avanserte produktet som er
+                    tilgjengelig.
                 </p>
             </div>
             <ul className={styles.list}>

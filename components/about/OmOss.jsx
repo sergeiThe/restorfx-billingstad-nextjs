@@ -4,7 +4,7 @@ import styles from "./OmOss.module.scss";
 
 function OmOss() {
     return (
-        <section className={`${styles.section} section`}>
+        <section className={`${styles.section} section`} id="omoss">
             <Image
                 alt="background restorfx"
                 src={"/images/bg1.jpg"}
@@ -14,13 +14,13 @@ function OmOss() {
             />
             <h2 className={styles.title}>Om RestorFX Billingstad</h2>
             <p className={styles.text}>
-                RestorFX is in the business of delivering the most efficient,
-                permanent, and innovative technology and products on the
-                market—with the goal of bringing the automotive detailing and
-                refinishing industry to the leading edge. We do this by focusing
-                on intelligent, smart tools that improve the industry, drive
-                innovation, and provide incredible value and satisfaction to
-                customers.
+                Vårt team av høykvalifiserte fagarbeidere innen foliering,
+                lakkbeskyttelse, og lakkgjennoppretting har opparbeidet seg lang
+                erfaring av å jobbe med ulike merker og typer kjøretøy.
+                <br></br>
+                <br></br>Ved å bruke ledende teknologier på markedet innen
+                bilpleie, leverer vi det bilen din aller mest trenger. Vi jobber
+                både med gamle og nye biler.
             </p>
         </section>
     );
