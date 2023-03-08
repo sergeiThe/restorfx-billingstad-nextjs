@@ -45,6 +45,10 @@ function Footer() {
                     <MdPhone className={styles.icon} />
                     <span>+47 467 00 299</span>
                 </a>
+                <a href="tel:+4796000212" className={styles["contact-wrapper"]}>
+                    <MdPhone className={styles.icon} />
+                    <span>+47 960 00 212</span>
+                </a>
                 <div className={styles["social-icons"]}>
                     <a
                         href="https://www.facebook.com/rfx.billingstad"
