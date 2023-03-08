@@ -1,0 +1,11 @@
+<!-- public/sitemap.xml -->
+<xml version="1.0" encoding="UTF-8">
+  <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://www.restorfx-asker.no</loc>
+      <lastmod>2023-03-08</lastmod>
+    </url>
+
+
+  </urlset>
+</xml>
