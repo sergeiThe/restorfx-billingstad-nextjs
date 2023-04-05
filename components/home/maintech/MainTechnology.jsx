@@ -28,9 +28,7 @@ function MainTechnology() {
                         overflaten på et kjøretøy slik at den ser ut som en helt
                         ny bil, rett fra fabrikken.
                     </p>
-                    <a href="/clearfx" className="btn">
-                        Mer info
-                    </a>
+                    <Link href="/clearfx">Mer info</Link>
                 </div>
             </div>
             <div className={styles.card}>
@@ -53,9 +51,7 @@ function MainTechnology() {
                         <li>Refinish - reparasjon av arr og riper</li>
                         <li>Retain - ekstra lag med beskyttelse</li>
                     </ul>
-                    <Link href="/restorfx" className={styles.btn}>
-                        Mer info
-                    </Link>
+                    <Link href="/restorfx">Mer info</Link>
                 </div>
             </div>
         </section>
