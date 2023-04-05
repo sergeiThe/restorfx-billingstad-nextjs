@@ -53,9 +53,9 @@ function MainTechnology() {
                         <li>Refinish - reparasjon av arr og riper</li>
                         <li>Retain - ekstra lag med beskyttelse</li>
                     </ul>
-                    <a href="/restorfx" className="btn">
+                    <Link href="/restorfx" className={styles.btn}>
                         Mer info
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
