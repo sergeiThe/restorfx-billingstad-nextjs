@@ -4,8 +4,8 @@ import { AiTwotoneCar } from "react-icons/ai";
 import { IoSparklesSharp } from "react-icons/io5";
 import { MdInvertColors } from "react-icons/md";
 import styles from "./BenefitSection.module.scss";
-import { useModalContext } from "../../store/Context";
-import { MODAL_TYPES } from "../../store/Context";
+import { useModalContext } from "../../../store/Context";
+import { MODAL_TYPES } from "../../../store/Context";
 
 function BenefitSection() {
     const modalCtx = useModalContext();

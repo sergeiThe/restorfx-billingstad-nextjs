@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import OmOss from "../components/about/OmOss";
-import OmRestorFX from "../components/about/OmRestorFX";
-import BenefitSection from "../components/benefits/BenefitSection";
+import OmOss from "../components/home/about/OmOss";
+import OmRestorFX from "../components/home/about/OmRestorFX";
+import BenefitSection from "../components/home/benefits/BenefitSection";
 import Contact from "../components/contact/Contact";
 import Messenger from "../components/contact/Messenger";
 import Footer from "../components/footer/Footer";
@@ -10,11 +10,14 @@ import Script from 'next/script'
 import ModalWindow from "../components/modals/ModalWindow";
 import Tjenester from "../components/services/Tjenester";
 import Head from "next/head";
+import MainTechnology from "../components/home/maintech/MainTechnology";
+import { MODAL_TYPES, useModalContext } from "../store/Context";
+import { headerContent } from '../data/home-page'
 
 
 export default function Home() {
 
-
+  const modalCtx = useModalContext()
 
 
   return (
@@ -53,16 +56,20 @@ export default function Home() {
       `}
       </Script>
       <ModalWindow />
+
+
+
       <Messenger />
-      <HeaderSection />
+      <HeaderSection isHomePage title={headerContent.title} subtitle={headerContent.subtitle} />
       <main>
         <BenefitSection />
+        <MainTechnology />
         <OmOss />
         <Tjenester />
-        <OmRestorFX />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
+
     </React.Fragment >
   )
 }

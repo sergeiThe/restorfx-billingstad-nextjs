@@ -10,16 +10,26 @@
     padding: 2rem 0;
 }
 
+.img {
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    transition: all 0.2s ease-out;
+}
+
 .logo-wrapper {
     width: 200px;
+    height: 200px;
     animation: fadeIn 1.5s ease-out 0s backwards;
+    cursor: pointer;
 }
 
 .nav-list {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    width: 60rem;
+    width: 80rem;
 
     border-radius: 30px;
     border-bottom: 1px solid $text-color;

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 
 export const MODAL_TYPES = {
     NONE: "none",
+    HVA_ER_RESTOR_FX: "hva-er-restor-fx",
     RESTOR_FX: "restorfx",
     CLEAR_FX: "clearfx",
     LAKK_RESTAURERING: "lakkrestaurering",

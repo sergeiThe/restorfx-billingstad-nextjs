@@ -5,24 +5,28 @@ import services from "../../data/services";
 
 function ModalWindow() {
     const modalCtx = useModalContext();
+
+    const closeModal = () => {
+        modalCtx.setModalType(MODAL_TYPES.NONE);
+        console.log("Closed!");
+    };
+
+    const modalType = services.get(modalCtx.modalType);
+
     return (
         <React.Fragment>
-            {modalCtx.modalType === MODAL_TYPES.RESTOR_FX ? (
+            {services.has(modalCtx.modalType) && (
                 <Modal
-                    title={services.at(0).title}
-                    text={services.at(0).longDesc}
+                    title={modalType.title}
+                    shortDesc={modalType.shortDesc}
+                    longDesc={modalType.longDesc}
+                    videoUrl={modalType.videoUrl}
+                    features={modalType.features.map((f) => {
+                        return <li key={f}>{f}</li>;
+                    })}
+                    onConfirm={closeModal}
                 />
-            ) : modalCtx.modalType === MODAL_TYPES.CLEAR_FX ? (
-                <Modal
-                    title={services.at(1).title}
-                    text={services.at(1).longDesc}
-                />
-            ) : modalCtx.modalType === MODAL_TYPES.FRONTLYS_RESTAURERING ? (
-                <Modal
-                    title={services.at(2).title}
-                    text={services.at(2).longDesc}
-                />
-            ) : null}
+            )}
         </React.Fragment>
     );
 }

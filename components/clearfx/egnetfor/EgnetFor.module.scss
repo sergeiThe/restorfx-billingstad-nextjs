@@ -1,0 +1,75 @@
+@import "../../../global-styles/variables.scss";
+@import "../../../global-styles/mixins.scss";
+
+.section {
+    padding: 3rem 5rem 5rem 5rem;
+
+    @include respond(mobile) {
+        padding: 3rem;
+    }
+
+    @include respond(tablet-portrait) {
+        padding: 5rem;
+    }
+
+    background-color: $text-color-secondary;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include respond(tablet-portrait) {
+        flex-direction: column;
+    }
+}
+
+.content {
+    flex-basis: 40%;
+    h2 {
+        color: $text-color;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.img-container {
+    position: relative;
+    flex-basis: 60%;
+    width: 100%;
+
+    @include respond(tablet-portrait) {
+        flex-basis: 100px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.img-box {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: 0px;
+    left: -150px;
+
+    @include respond(tablet-portrait) {
+        width: 100%;
+        height: 220%;
+    }
+
+    @include respond(mobile) {
+        width: 100%;
+        height: 200%;
+        left: -50px;
+    }
+
+    z-index: 1;
+}
+
+.img {
+}

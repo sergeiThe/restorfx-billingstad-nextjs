@@ -1,0 +1,32 @@
+@import "../../../global-styles/variables.scss";
+@import "../../../global-styles/mixins.scss";
+
+.section {
+    padding: 8rem;
+
+    @include respond(mobile) {
+        padding: 3rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    gap: 70px;
+    @include respond(tablet-portrait) {
+        display: block;
+    }
+
+    list-style: none;
+
+    li {
+        border-left: $text-color 3px solid;
+        padding-left: 20px;
+    }
+}

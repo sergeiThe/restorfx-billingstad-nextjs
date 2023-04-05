@@ -4,6 +4,7 @@ import styles from "./Menu.module.scss";
 import { Link } from "react-scroll";
 import { useNavContext } from "../../store/Context";
 import { motion } from "framer-motion";
+import MenuLink from "./AnchorLink";
 
 function Menu() {
     const menuCtx = useNavContext();
@@ -17,45 +18,37 @@ function Menu() {
         >
             <nav>
                 <ul>
-                    <li>
-                        <Link
-                            onClick={menuCtx.toggleNav}
-                            to="tjenester"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={500}
-                        >
-                            Tjenester
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={menuCtx.toggleNav}
-                            to="omoss"
-                            spy={true}
-                            offset={50}
-                            smooth={true}
-                            duration={500}
-                        >
-                            Om oss
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={menuCtx.toggleNav}
-                            to="kontakt"
-                            smooth={true}
-                            spy={true}
-                            offset={50}
-                            duration={500}
-                        >
-                            Kontakt
-                        </Link>
-                    </li>
+                    <MenuLink
+                        to={"tjenester"}
+                        name={"Tjenester"}
+                        onClick={menuCtx.toggleNav}
+                    />
+                    <MenuLink
+                        to={"omoss"}
+                        name={"Om oss"}
+                        onClick={menuCtx.toggleNav}
+                    />
+                    <MenuLink
+                        to={"kontakt"}
+                        name={"Tjenester"}
+                        onClick={menuCtx.toggleNav}
+                    />
                 </ul>
             </nav>
         </motion.div>
+    );
+}
+
+export function Hamburger() {
+    const navCtx = useNavContext();
+    return (
+        <div className="hamburger" onClick={navCtx.toggleNav}>
+            <div
+                className={
+                    navCtx.navIsOpen ? "burgerLine menuOpened" : "burgerLine"
+                }
+            ></div>
+        </div>
     );
 }
 

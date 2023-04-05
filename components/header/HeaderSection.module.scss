@@ -1,10 +1,10 @@
+@import "./../../global-styles/variables.scss";
 @import "./../../global-styles/mixins.scss";
 @import "./../../global-styles/animations.scss";
-@import "./../../global-styles/variables.scss";
 
 .header-section {
     min-height: 100vh;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
     background: linear-gradient(
         to bottom right,
         rgb(0, 0, 0),
@@ -15,7 +15,7 @@
     justify-content: center;
     text-align: center;
 
-    overflow: hidden;
+    position: relative;
 }
 
 .bg {
@@ -63,5 +63,17 @@
 
     &:hover {
         font-size: 4rem;
+    }
+}
+
+.video-container {
+    margin-top: 5rem;
+    position: relative;
+    min-width: 500px;
+    height: 300px;
+
+    @include respond(tablet-portrait) {
+        min-width: 300px;
+        height: 200px;
     }
 }

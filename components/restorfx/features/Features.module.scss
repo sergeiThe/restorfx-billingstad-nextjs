@@ -1,0 +1,56 @@
+@import "../../../global-styles/variables.scss";
+@import "../../../global-styles/mixins.scss";
+
+.section {
+    padding: 8rem;
+
+    @include respond(mobile) {
+        padding: 3rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+
+    h2 {
+        margin: 3rem auto;
+        max-width: 700px;
+        text-align: center;
+    }
+}
+
+.list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 7rem;
+
+    display: grid;
+    gap: 20px;
+    @include respond(mobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    list-style: none;
+
+    li {
+        background-color: $text-color-secondary;
+        border-radius: 20px;
+        min-height: 200px;
+
+        @include respond(mobile) {
+            min-height: 150px;
+        }
+
+        padding: 30px;
+
+        h3 {
+            color: $text-color;
+        }
+
+        p {
+            color: white;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 @import "./../../global-styles/mixins.scss";
 .section {
     border-top: 3px solid $text-color;
-    border-bottom: 3px solid $text-color;
+    // border-bottom: 3px solid $text-color;
     padding-top: 10rem;
     padding-bottom: 10rem;
     text-align: center;
@@ -26,6 +26,31 @@
 .bg {
     z-index: -10;
     border-radius: 30px;
+}
+
+.prices {
+    background-color: $text-color-secondary;
+    padding: 80px;
+}
+
+.pricelist {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 10px;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+    }
+
+    span {
+        color: white;
+    }
 }
 
 .list {

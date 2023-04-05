@@ -1,0 +1,43 @@
+@import "./../../../global-styles/variables.scss";
+@import "./../../../global-styles/mixins.scss";
+@import "./../../../global-styles/animations.scss";
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.521), rgb(0, 0, 0));
+    padding: 30px 50px 50px 50px;
+    border-left: $text-color solid 5px;
+    position: relative;
+
+    flex-basis: 50%;
+    max-width: 500px;
+}
+
+.bg {
+    z-index: -10;
+}
+
+.content {
+    z-index: 10;
+    position: relative;
+
+    ul {
+        margin: 20px 20px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.title {
+    color: $text-color;
+}
+
+.p {
+    color: white;
+}

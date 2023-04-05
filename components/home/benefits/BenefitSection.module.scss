@@ -1,8 +1,9 @@
-@import "./../../global-styles/variables.scss";
-@import "./../../global-styles//mixins.scss";
+@import "./../../../global-styles/variables.scss";
+@import "./../../../global-styles/mixins.scss";
+@import "./../../../global-styles/animations.scss";
 .section {
     border-top: 3px solid $text-color;
-    border-bottom: 3px solid $text-color;
+    // border-bottom: 3px solid $text-color;
     padding-top: 10rem;
     padding-bottom: 10rem;
 }

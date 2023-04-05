@@ -1,5 +1,6 @@
-@import "./../../global-styles/variables.scss";
-@import "./../../global-styles/mixins.scss";
+@import "./../../../global-styles/variables.scss";
+@import "./../../../global-styles/mixins.scss";
+@import "./../../../global-styles/animations.scss";
 
 .section {
     padding-top: 5rem;
@@ -11,7 +12,6 @@
 
 .title {
     color: $text-color;
-    font-weight: 100;
 }
 
 .text {

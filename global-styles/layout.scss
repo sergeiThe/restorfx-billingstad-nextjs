@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @include respond(mobile) {
     .section {
         padding-left: 50px;

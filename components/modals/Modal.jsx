@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "./Modal.module.scss";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useModalContext, MODAL_TYPES } from "../../store/Context";
 import { IoMdCloseCircle } from "react-icons/io";
+import services from "../../data/services";
 
-const ModalWindow = (props) => {
+const Backdrop = (props) => {
+    return <div className={styles.backdrop} onClick={props.onConfirm}></div>;
+};
+
+const Overlay = (props) => {
     const modalCtx = useModalContext();
 
     return (
@@ -17,7 +22,20 @@ const ModalWindow = (props) => {
         >
             <div className={styles["text-wrapper"]}>
                 <h3 className={styles.title}>{props.title}</h3>
-                <p className={styles.text}>{props.text}</p>
+                <p className={styles.text}>{props.shortDesc}</p>
+                <p className={styles.text}>{props.longDesc}</p>
+                <ul>{props.features}</ul>
+            </div>
+
+            <div>
+                <iframe
+                    width="560"
+                    height="315"
+                    src={props.videoUrl}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
             </div>
 
             <IoMdCloseCircle
@@ -34,7 +52,17 @@ function Modal(props) {
     return (
         <React.Fragment>
             {ReactDOM.createPortal(
-                <ModalWindow title={props.title} text={props.text} />,
+                <Backdrop onConfirm={props.onConfirm} />,
+                document.querySelector("#backdrop")
+            )}
+            {ReactDOM.createPortal(
+                <Overlay
+                    title={props.title}
+                    shortDesc={props.shortDesc}
+                    longDesc={props.longDesc}
+                    videoUrl={props.videoUrl}
+                    features={props.features}
+                />,
                 document.querySelector("#modal")
             )}
         </React.Fragment>
