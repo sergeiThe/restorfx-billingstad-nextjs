@@ -18,8 +18,9 @@
     align-items: center;
     padding-bottom: 7rem;
 
-    & > * {
-        max-width: 60rem;
+    p {
+        max-width: 700px;
+        margin: 20px auto;
     }
 }
 
@@ -31,6 +32,10 @@
 .prices {
     background-color: $text-color-secondary;
     padding: 80px;
+
+    @include respond(tablet-portrait) {
+        padding: 3rem 2rem 3rem 2rem;
+    }
 }
 
 .pricelist {

@@ -2,11 +2,23 @@
 @import "./../../../global-styles/mixins.scss";
 @import "./../../../global-styles/animations.scss";
 .section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+
+    @include respond(tablet-portrait) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
