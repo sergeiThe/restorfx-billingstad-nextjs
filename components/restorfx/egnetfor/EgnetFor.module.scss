@@ -15,18 +15,6 @@
     background-color: $text-color-secondary;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    @include respond(tablet-portrait) {
-        flex-direction: column;
-    }
-}
-
 .content {
     flex-basis: 40%;
     h2 {

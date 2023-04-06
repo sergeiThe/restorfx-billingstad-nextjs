@@ -13,7 +13,7 @@ function Features() {
     });
     return (
         <section className={`${styles.section} section`}>
-            <div className={styles.container}>
+            <div className="container">
                 <ul className={styles.list}>{featureList}</ul>
             </div>
         </section>

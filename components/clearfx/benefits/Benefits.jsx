@@ -9,22 +9,24 @@ function Benefits() {
     });
     return (
         <section className={`section ${styles.section}`}>
-            <div className={styles.container}>
-                <div className={styles["img-container"]}>
-                    <div className={styles["img-box"]}>
-                        <Image
-                            src={"/images/porsche1.png"}
-                            alt="tesla"
-                            objectFit="contain"
-                            layout="fill"
-                            className={styles.img}
-                        />
+            <div className="container">
+                <div className="flex">
+                    <div className={styles["img-container"]}>
+                        <div className={styles["img-box"]}>
+                            <Image
+                                src={"/images/porsche1.png"}
+                                alt="tesla"
+                                objectFit="contain"
+                                layout="fill"
+                                className={styles.img}
+                            />
+                        </div>
                     </div>
-                </div>
 
-                <div className={styles.content}>
-                    <h2>Hovedfordelene med ClearFX produktet</h2>
-                    <ul>{benefitList}</ul>
+                    <div className={styles.content}>
+                        <h2>Hovedfordelene med ClearFX produktet</h2>
+                        <ul>{benefitList}</ul>
+                    </div>
                 </div>
             </div>
         </section>

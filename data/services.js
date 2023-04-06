@@ -61,7 +61,7 @@ export const prices = [
     new Prices("Keramisk Coating Royal med 9 års garanti", 11900),
     new Prices("Keramisk Coating Royal med 5 års garanti", 8900),
     new Prices("Keramisk Coating med 2 års garanti", 6900),
-    new Prices("ClearFX Exterior Graphene - Keramisk Lakkforsegling", 12900),
+    new Prices("ClearFX Exterior Graphene Coating", 12900),
     new Prices("Steinsprut System", 1400),
     new Prices("Lykt Restaurering", 2500),
     new Prices("1-trinnspolering", 3600),

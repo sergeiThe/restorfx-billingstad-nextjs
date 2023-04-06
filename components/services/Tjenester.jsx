@@ -18,22 +18,26 @@ function Tjenester() {
 
     return (
         <section className={`${styles.section} section`} id="tjenester">
-            <div className={styles["text-wrapper"]}>
-                <h2 className={styles.title}>Våre tjenester og priser</h2>
-                <p>
-                    Av de tusenvis av produktene som finnes i markedet, kan
-                    ingenting sammenlignes med RestorFX. Det revolusjonerer
-                    måten bilindustrien og bransjen for kosmetisk klargjøring
-                    etterlakkerer. Med kontinuerlig testing og evaluering
-                    forblir RestorFX det mest avanserte produktet som er
-                    tilgjengelig.
-                </p>
-                <p>
-                    <strong>-20% rabatt for medlemmer i Porsche Club</strong>
-                </p>
-            </div>
-            <div className={styles.prices}>
-                <ul className={styles.pricelist}>{priceList}</ul>
+            <div className="container">
+                <div className={styles["text-wrapper"]}>
+                    <h2 className={styles.title}>Våre tjenester og priser</h2>
+                    <p>
+                        Av de tusenvis av produktene som finnes i markedet, kan
+                        ingenting sammenlignes med RestorFX. Det revolusjonerer
+                        måten bilindustrien og bransjen for kosmetisk
+                        klargjøring etterlakkerer. Med kontinuerlig testing og
+                        evaluering forblir RestorFX det mest avanserte produktet
+                        som er tilgjengelig.
+                    </p>
+                    <p>
+                        <strong>
+                            -20% rabatt for medlemmer i Porsche Club
+                        </strong>
+                    </p>
+                </div>
+                <div className={styles.prices}>
+                    <ul className={styles.pricelist}>{priceList}</ul>
+                </div>
             </div>
         </section>
     );

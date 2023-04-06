@@ -7,31 +7,14 @@
     @include respond(mobile) {
         padding: 3rem;
     }
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1300px;
-
     h2 {
-        margin: 3rem auto;
+        margin: 5rem auto;
         max-width: 700px;
         text-align: center;
     }
 }
 
 .list {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-top: 7rem;
-
-    display: grid;
-    gap: 20px;
-    @include respond(mobile) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
     list-style: none;
 
     li {

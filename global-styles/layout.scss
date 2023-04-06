@@ -7,6 +7,27 @@
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
+    @include respond(mobile) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+
+    @include respond(tablet-portrait) {
+        flex-direction: column;
+    }
 }
 
 body {

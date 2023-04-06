@@ -13,12 +13,13 @@ function Features() {
     });
     return (
         <section className={`${styles.section} section`}>
-            <div className={styles.container}>
+            <div className="container">
                 <h2>
                     RestorFX er en innovativ teknologi som gjenoppretter
                     fabrikkoverflatens glatthet.
                 </h2>
-                <ul className={styles.list}>{featureList}</ul>
+
+                <ul className={`${styles.list} flex`}>{featureList}</ul>
             </div>
         </section>
     );
